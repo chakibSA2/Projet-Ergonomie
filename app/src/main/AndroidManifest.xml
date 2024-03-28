@@ -30,6 +30,9 @@
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />
+        <activity
+            android:name=".MainboardVoyageurActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
