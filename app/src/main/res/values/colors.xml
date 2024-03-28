@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="loginBackground">#f9e79f</color>
+    <color name="formBackground">#fcf3cf</color>
+    <color name ="strokeColor">#fcf3cf</color>
+    <color name ="purple">#d7bde2</color>
 </resources>
