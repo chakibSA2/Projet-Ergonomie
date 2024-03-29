@@ -9,7 +9,7 @@ class StartupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE)
-        val isLoggedIn = sharedPreferences.getBoolean("IsLoggedIn", true)
+        val isLoggedIn = sharedPreferences.getBoolean("IsLoggedIn", false)
         val intent = if (isLoggedIn) {
             Intent(this, HomepageActivity::class.java)
         } else {

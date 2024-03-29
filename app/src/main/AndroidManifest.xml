@@ -51,6 +51,9 @@
         <activity
             android:name=".MainboardVoyageurActivity"
             android:exported="false" />
+        <activity
+            android:name=".CourseActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
