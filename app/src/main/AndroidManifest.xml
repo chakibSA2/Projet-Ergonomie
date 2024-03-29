@@ -13,6 +13,15 @@
         android:theme="@style/Theme.FamilyCalandar"
         tools:targetApi="31">
         <activity
+            android:name=".ViewMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainboardAssociationActivity"
             android:exported="false" />
         <activity
