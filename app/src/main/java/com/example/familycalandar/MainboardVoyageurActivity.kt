@@ -12,6 +12,7 @@ class MainboardVoyageurActivity: AppCompatActivity() {
     private lateinit var btnVoyage: Button;
     private lateinit var btnDocuments: Button;
 
+    // Initialize UI elements
      override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainboardvoyageuractivity);
