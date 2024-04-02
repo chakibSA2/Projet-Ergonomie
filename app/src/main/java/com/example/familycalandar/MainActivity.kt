@@ -2,9 +2,7 @@ package com.example.familycalandar
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -13,15 +11,33 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val createAccountButton: Button = findViewById(R.id.buttonCreateAccount)
-        createAccountButton.setOnClickListener {
-            val intent = Intent(this, CreateAccountActivity::class.java)
+        val traveler: Button = findViewById(R.id.btn_TravelerDashboard)
+        traveler.setOnClickListener {
+            val intent = Intent(this, MainboardVoyageurActivity::class.java)
             startActivity(intent)
         }
 
-        val loginButton: Button = findViewById(R.id.buttonLogin)
-        loginButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+        val parent : Button = findViewById(R.id.btn_FamilyDashboard)
+        parent.setOnClickListener {
+            val intent = Intent(this, MainboardParentsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val association : Button = findViewById(R.id.btn_AssociationDashboard)
+        association.setOnClickListener {
+            val intent = Intent(this, MainboardAssociationActivity::class.java)
+            startActivity(intent)
+        }
+
+        val student : Button = findViewById(R.id.btn_StudentDashboard)
+        student.setOnClickListener {
+            val intent = Intent(this, MainboardEtudiantActivity::class.java)
+            startActivity(intent)
+        }
+
+        val default : Button = findViewById(R.id.btn_DefaultDashboard)
+        default.setOnClickListener {
+            val intent = Intent(this, MainboardUserGeneralActivity::class.java)
             startActivity(intent)
         }
 
