@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/img"
         android:supportsRtl="true"
         android:theme="@style/Theme.FamilyCalandar"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".TravelViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTravelActivity"
+            android:exported="false" />
         <activity
             android:name=".ViewMenuActivity"
             android:exported="false" />
@@ -34,8 +43,8 @@
             android:name=".MainboardUserGeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".TravelsListViewActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
