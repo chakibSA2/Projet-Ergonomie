@@ -16,7 +16,7 @@
             android:name=".TravelViewActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TravelsListViewActivity"
             android:exported="false" />
         <activity
             android:name=".CreateTravelActivity"
@@ -43,7 +43,7 @@
             android:name=".MainboardUserGeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".TravelsListViewActivity"
+            android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
