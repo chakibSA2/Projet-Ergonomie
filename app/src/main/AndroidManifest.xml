@@ -84,6 +84,17 @@
         <activity
             android:name=".toDoList.ToDoListActivity"
             android:exported="false" />
+        <activity
+            android:name=".recette.RecyclerRecettes"
+            android:exported="false" />
+        <activity
+            android:name=".recette.CreatRecetteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recette.Details_recette_activity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>

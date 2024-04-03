@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.R
 
-class RecetteAdapter(private val recettesList: List<RecetteModel>) :
+class RecetteAdapter(private val recettesList: List<RecetteModel>, private val onItemClick: (RecetteModel) -> Unit) :
     RecyclerView.Adapter<RecetteAdapter.RecetteViewHolder>() {
 
     class RecetteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -26,6 +26,9 @@ class RecetteAdapter(private val recettesList: List<RecetteModel>) :
         val currentRecette = recettesList[position]
         holder.recetteNom.text = currentRecette.nom
         holder.recetteDescription.text = currentRecette.description
+        holder.itemView.setOnClickListener {
+            onItemClick(recettesList[position])
+        }
     }
 
     override fun getItemCount() = recettesList.size

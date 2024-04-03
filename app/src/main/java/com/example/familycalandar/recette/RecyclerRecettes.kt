@@ -2,11 +2,12 @@ package com.example.familycalandar.recette
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.R
+import com.example.familycalandar.menu.ViewMenuActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class RecyclerRecettes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,21 +15,32 @@ class RecyclerRecettes : AppCompatActivity() {
         setContentView(R.layout.activity_recycler_recettes)
 
         val recettesList = listOf(
-            RecetteModel("Recette 1", "Description de la recette 1"),
-            RecetteModel("Recette 2", "Description de la recette 2"),
-            RecetteModel("Recette 1", "Description de la recette 1"),
-            RecetteModel("Recette 2", "Description de la recette 2"),
+            RecetteModel("Patte carbonara", "délicieuse patte a la carbo"),
+            RecetteModel("pomme de terre sauté ", "légere pomme de terre sauté"),
+            RecetteModel("chebakia", "le diabet a l'etat pure"),
+            RecetteModel("kebab", "salade tomate ognion"),
 
             )
 
+
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = RecetteAdapter(recettesList)
+        recyclerView.adapter = RecetteAdapter(recettesList) { recette->
+            val intent = Intent(this, ViewMenuActivity::class.java)
+            startActivity(intent)
+        }
 
-        val creatrecepi: Button = findViewById(R.id.fab_add)
+        val creatrecepi: FloatingActionButton = findViewById(R.id.fab_add)
         creatrecepi.setOnClickListener {
             val intent = Intent(this, CreatRecetteActivity::class.java)
             startActivity(intent)
         }
+
+        recyclerView.adapter = RecetteAdapter(recettesList) {  recette ->
+            val intent = Intent(this, Details_recette_activity::class.java)
+            startActivity(intent)
+        }
     }
-}
+
+    }
+
