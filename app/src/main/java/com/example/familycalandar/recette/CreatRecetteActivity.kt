@@ -1,8 +1,9 @@
-package com.example.familycalandar
+package com.example.familycalandar.recette
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.familycalandar.R
 
 class CreatRecetteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

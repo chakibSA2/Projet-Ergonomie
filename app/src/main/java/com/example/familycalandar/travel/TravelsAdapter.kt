@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.travel
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.R
+
 class TravelsAdapter(private val TravelList: MutableList<TravelModel>, private val onVoyageClickListener: (TravelModel) -> Unit) : RecyclerView.Adapter<TravelsAdapter.VoyageViewHolder>() {
 
     // Fournit une référence aux vues pour chaque élément de données

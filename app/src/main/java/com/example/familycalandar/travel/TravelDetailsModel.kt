@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.travel
 
 data class TravelDetailsModel (
     val detail: String,

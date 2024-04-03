@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FAFAFA"
     android:padding="24dp"
-    tools:context=".DocumentsListViewActivity">
+    tools:context=".document.DocumentsListViewActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

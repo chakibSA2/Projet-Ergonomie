@@ -13,25 +13,25 @@
         android:theme="@style/Theme.FamilyCalandar"
         tools:targetApi="31">
         <activity
-            android:name=".LoginDocumentActivity"
+            android:name=".document.LoginDocumentActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateDocumentActivity"
+            android:name=".document.CreateDocumentActivity"
             android:exported="false" />
         <activity
-            android:name=".DocumentsListViewActivity"
+            android:name=".document.DocumentsListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".TravelViewActivity"
+            android:name=".travel.TravelViewActivity"
             android:exported="false" />
         <activity
-            android:name=".TravelsListViewActivity"
+            android:name=".travel.TravelsListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateTravelActivity"
+            android:name=".travel.CreateTravelActivity"
             android:exported="false" />
         <activity
-            android:name="menu.ViewMenuActivity"
+            android:name=".menu.ViewMenuActivity"
             android:exported="false" />
         <activity
             android:name=".menu.CreateMenuActivity"
@@ -64,7 +64,7 @@
             android:name=".MainboardVoyageurActivity"
             android:exported="false" />
         <activity
-            android:name=".CourseActivity"
+            android:name=".courses.CourseActivity"
             android:exported="false" />
         <activity
             android:name=".task.TasksListActivity"

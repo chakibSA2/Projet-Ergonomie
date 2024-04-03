@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.recette
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.R
 
 class RecyclerRecettes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

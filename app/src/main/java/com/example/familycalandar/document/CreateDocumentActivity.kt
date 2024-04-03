@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.document
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import com.example.familycalandar.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class CreateDocumentActivity : AppCompatActivity() {

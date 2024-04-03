@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FAFAFA"
     android:padding="24dp"
-    tools:context=".CreateDocumentActivity">
+    tools:context=".document.CreateDocumentActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

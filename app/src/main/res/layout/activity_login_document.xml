@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#FAFAFA"
     android:padding="24dp"
-    tools:context=".LoginDocumentActivity">
+    tools:context=".document.LoginDocumentActivity">
 
 
         <TextView

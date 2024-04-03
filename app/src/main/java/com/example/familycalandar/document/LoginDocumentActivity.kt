@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.document
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.familycalandar.R
 
 class LoginDocumentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.document
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.R
 
 class DocumentAdapter(private val DocumentList: MutableList<DocumentModel>, private val onDocumentClickListener: (DocumentModel) -> Unit) : RecyclerView.Adapter<DocumentAdapter.DocumentViewHolder>() {
 

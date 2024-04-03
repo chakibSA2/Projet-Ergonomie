@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.recette
 
 
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.R
 
 class RecetteAdapter(private val recettesList: List<RecetteModel>) :
     RecyclerView.Adapter<RecetteAdapter.RecetteViewHolder>() {

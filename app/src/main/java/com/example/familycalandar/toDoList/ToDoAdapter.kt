@@ -19,7 +19,7 @@ class ToDoAdapter(private val toDoList: List<ToDo>) : RecyclerView
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ToDoViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.todo_item, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent, false)
         return ToDoViewHolder(itemView)
     }
 

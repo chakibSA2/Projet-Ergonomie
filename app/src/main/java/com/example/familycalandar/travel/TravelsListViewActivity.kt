@@ -1,4 +1,4 @@
-package com.example.familycalandar
+package com.example.familycalandar.travel
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.MainActivity
+import com.example.familycalandar.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class TravelsListViewActivity : AppCompatActivity() {
