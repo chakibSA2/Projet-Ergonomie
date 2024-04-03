@@ -1,11 +1,15 @@
-package com.example.familycalandar
+package com.example.familycalandar.menu
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-class MenuAdapter(private val menuList: List<MenuModel>, private val onMenuClickListener: (MenuModel) -> Unit) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+import com.example.familycalandar.R
+
+class MenuAdapter(private val menuList: List<MenuModel>,
+                  private val onMenuClickListener: (MenuModel) -> Unit) : RecyclerView
+                      .Adapter<MenuAdapter.MenuViewHolder>() {
 
     // Fournit une référence aux vues pour chaque élément de données
     class MenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

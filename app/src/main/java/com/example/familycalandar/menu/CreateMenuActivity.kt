@@ -1,10 +1,11 @@
-package com.example.familycalandar
+package com.example.familycalandar.menu
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.familycalandar.R
 import java.util.Calendar
 
 class CreateMenuActivity : AppCompatActivity() {

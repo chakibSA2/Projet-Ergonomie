@@ -26,6 +26,7 @@
 
             <!-- Example of one card item -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/vgn_ParametersVignette"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_columnWeight="1"
@@ -57,6 +58,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/vgn_GroceryVignette"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -88,6 +90,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id = "@+id/vgn_MenusVignette"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -119,6 +122,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id = "@+id/vgn_AgendaVignette"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -150,6 +154,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id = "@+id/vgn_ToDoVignette"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"

@@ -4,32 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.MenuViewActivity"
+    tools:context=".task.TasksListActivity"
     android:background="#FAFAFA"
-    android:padding="24dp"
-    >
+    android:padding="24dp">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/tb_tasksListToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Mes Menu"
-        app:navigationIcon="@drawable/arrow_back_24" />
+        app:navigationIcon="@drawable/back_button"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="TÂCHES"
+        app:titleTextColor="@android:color/black" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/menuRecyclerView"
+        android:id="@+id/rv_tasksList"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/item_menu" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_tasksListToolbar"
+        tools:listitem="@layout/task_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addMenuButton"
+        android:id="@+id/btn_addTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_input_add"
