@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.familycalandar.document.DocumentsListViewActivity
 import com.example.familycalandar.menu.MenuViewActivity
+import com.example.familycalandar.parametre.SettingsActivity
 import com.example.familycalandar.toDoList.ToDoListActivity
 import com.example.familycalandar.travel.TravelsListViewActivity
 
@@ -31,6 +32,12 @@ class MainboardVoyageurActivity: AppCompatActivity() {
          val menus : CardView = findViewById(R.id.vgn_MenusVignette)
          menus.setOnClickListener {
              val intent = Intent(this, MenuViewActivity::class.java)
+             startActivity(intent)
+         }
+
+         val settings : CardView = findViewById(R.id.vgn_ParametersVignette)
+         settings.setOnClickListener {
+             val intent = Intent(this, SettingsActivity::class.java)
              startActivity(intent)
          }
     }

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.FamilyCalandar"
         tools:targetApi="31">
         <activity
+            android:name=".parametre.ChangePinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".document.LoginDocumentActivity"
             android:exported="false" />
         <activity
@@ -52,7 +58,7 @@
             android:name=".MainboardUserGeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".parametre.SettingsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
