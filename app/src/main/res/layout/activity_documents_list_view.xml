@@ -14,7 +14,7 @@
         android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="Mes Documents"
-        app:navigationIcon="@drawable/arrow_back_24" />
+        app:navigationIcon="@drawable/back_button" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/documentRecyclerView"
