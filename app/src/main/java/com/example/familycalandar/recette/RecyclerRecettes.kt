@@ -16,7 +16,7 @@ class RecyclerRecettes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_recettes)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val toolbar = findViewById<Toolbar>(R.id.tb_recettesListToolbar)
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener {
             val intent = Intent(this, TravelsListViewActivity::class.java)
