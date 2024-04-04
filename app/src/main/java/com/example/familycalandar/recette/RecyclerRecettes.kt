@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.MainboardEtudiantActivity
 import com.example.familycalandar.R
 import com.example.familycalandar.menu.ViewMenuActivity
 import com.example.familycalandar.travel.TravelsListViewActivity
@@ -19,7 +20,7 @@ class RecyclerRecettes : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.tb_recettesListToolbar)
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener {
-            val intent = Intent(this, TravelsListViewActivity::class.java)
+            val intent = Intent(this, MainboardEtudiantActivity::class.java)
             startActivity(intent)
         }
 
@@ -28,7 +29,6 @@ class RecyclerRecettes : AppCompatActivity() {
             RecetteModel("Pommes de terre sautées ", "La recette simple et rapide"),
             RecetteModel("Chebakia", "La diabète à l'état pur"),
             RecetteModel("Kebab", "Comme au snack"),
-
             )
 
 
