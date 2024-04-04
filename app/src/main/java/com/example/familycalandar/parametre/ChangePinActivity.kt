@@ -36,6 +36,7 @@ class ChangePinActivity : AppCompatActivity() {
         val correctOldPin = "12345"
         return when {
             oldPin != correctOldPin -> false
+            newPin.length !in 4..6 -> false
             newPin != confirmNewPin -> false
             else -> true
         }

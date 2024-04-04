@@ -202,7 +202,7 @@
                         android:layout_width="138dp"
                         android:layout_height="161dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/voyage" />
+                        android:src="@drawable/budget" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -221,30 +221,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="138dp"
-                        android:layout_height="161dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/budget" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:text="Budget" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:cardElevation="4dp"/>
 
         </GridLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

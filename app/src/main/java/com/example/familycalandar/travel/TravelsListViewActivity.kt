@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.MainActivity
+import com.example.familycalandar.MainboardVoyageurActivity
 import com.example.familycalandar.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -19,7 +20,7 @@ class TravelsListViewActivity : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainboardVoyageurActivity::class.java)
             startActivity(intent)
         }
 

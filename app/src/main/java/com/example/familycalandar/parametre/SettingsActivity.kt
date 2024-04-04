@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import com.example.familycalandar.MainActivity
 import com.example.familycalandar.MainboardAssociationActivity
+import com.example.familycalandar.MainboardVoyageurActivity
 import com.example.familycalandar.R
 import com.example.familycalandar.menu.MenuViewActivity
 import com.example.familycalandar.task.TasksListActivity
@@ -20,7 +21,7 @@ class SettingsActivity : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.settings_Toolbar)
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener {
-            val intent = Intent(this, MainboardAssociationActivity::class.java)
+            val intent = Intent(this, MainboardVoyageurActivity::class.java)
             startActivity(intent)
         }
 
