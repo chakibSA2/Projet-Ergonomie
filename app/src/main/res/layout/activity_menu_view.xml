@@ -14,8 +14,9 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Mes Menu"
-        app:navigationIcon="@drawable/back_button" />
+        app:navigationIcon="@drawable/back_button"
+        app:title="Menus de la semaine"
+        tools:layout_editor_absoluteX="24dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"

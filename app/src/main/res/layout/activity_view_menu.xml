@@ -11,28 +11,28 @@
         android:id="@+id/menuName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="menu 1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Menu 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/menuDescription"
         android:layout_width="0dp"
         android:layout_height="327dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:text="Kebab salade tomate ognion"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/menuName"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text="Salade - Kebab - Fondant au chocolat"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/menuName" />
 
     <Button
         android:id="@+id/DateButton"

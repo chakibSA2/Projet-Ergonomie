@@ -9,13 +9,13 @@
         android:id="@+id/tlb_CoursesListToolbar"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/back_button"
-        app:title="LISTE DES COURSES" />
+        app:title="Liste des courses" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -44,6 +44,7 @@
         android:fontFamily="cursive"
         android:text="Ma liste"
         android:textAlignment="center"
+        android:textColor="@color/button"
         android:textSize="34sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"

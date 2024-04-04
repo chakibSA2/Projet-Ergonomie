@@ -4,22 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_Label"
-        android:layout_width="312dp"
-        android:layout_height="wrap_content"
-        android:text="Entrer le nom de votre tâche"
-        android:layout_marginLeft="5dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"/>
-
     <EditText
         android:id="@+id/edtTxt_ToDoName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Nom de la tâche"
         android:inputType="textEmailAddress">
 
-        <requestFocus/>
+        <requestFocus />
     </EditText>
 </LinearLayout>

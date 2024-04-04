@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/back_button"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="TÂCHES"
+        app:title="Liste des tâches"
         app:titleTextColor="@android:color/black" />
 
     <androidx.recyclerview.widget.RecyclerView

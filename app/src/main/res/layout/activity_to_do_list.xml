@@ -11,13 +11,13 @@
         android:id="@+id/tlb_ToDoListToolbar"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/back_button"
-        app:title="TO DO LIST" />
+        app:title="To-Do Liste" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_ToDoList"
