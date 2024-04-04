@@ -31,6 +31,7 @@ class ChangePinActivity : AppCompatActivity() {
         }
     }
 
+
     private fun validatePin(oldPin: String, newPin: String, confirmNewPin: String): Boolean {
         val correctOldPin = "12345"
         return when {
