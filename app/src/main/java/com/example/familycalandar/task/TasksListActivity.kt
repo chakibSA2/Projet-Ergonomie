@@ -3,8 +3,10 @@ package com.example.familycalandar.task
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.MainboardAssociationActivity
 import com.example.familycalandar.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -12,6 +14,13 @@ class TasksListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tasks_list)
+
+        val toolbar = findViewById<Toolbar>(R.id.tb_tasksListToolbar)
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, MainboardAssociationActivity::class.java)
+            startActivity(intent)
+        }
 
         val recyclerView = findViewById<RecyclerView>(R.id.rv_tasksList)
         recyclerView.layoutManager = LinearLayoutManager(this)

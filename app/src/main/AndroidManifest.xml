@@ -93,8 +93,9 @@
         <activity
             android:name=".recette.Details_recette_activity"
             android:exported="false" />
-
-
+        <activity
+            android:name=".agenda.AgendaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

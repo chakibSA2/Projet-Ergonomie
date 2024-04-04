@@ -9,8 +9,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.familycalandar.MainboardParentsActivity
 import com.example.familycalandar.R
 import com.example.familycalandar.task.ToDoAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,6 +25,13 @@ class ToDoListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_to_do_list)
+
+        val toolbar = findViewById<Toolbar>(R.id.tlb_ToDoListToolbar)
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, MainboardParentsActivity::class.java)
+            startActivity(intent)
+        }
 
         val recyclerView = findViewById<RecyclerView>(R.id.rv_ToDoList)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -70,8 +79,6 @@ class ToDoListActivity : AppCompatActivity() {
         }
     }
 
-
-
     private fun showAddingTaskDialog() {
         val view = View.inflate(this, R.layout.dialog_todo_add, null)
         val alert = AlertDialog.Builder(this)
@@ -84,7 +91,6 @@ class ToDoListActivity : AppCompatActivity() {
     }
 
     private fun confirmAddTask(name: String) {
-        /** Suppression des notes pour lesquelles l'attribut "selected" est true **/
         toDoList.add(ToDo(false, name))
         adapterToDo.notifyDataSetChanged()
         Toast.makeText(this, "Tâche ajoutée avec succès.",
