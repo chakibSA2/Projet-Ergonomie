@@ -3,16 +3,25 @@ package com.example.familycalandar.recette
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.R
 import com.example.familycalandar.menu.ViewMenuActivity
+import com.example.familycalandar.travel.TravelsListViewActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class RecyclerRecettes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_recettes)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, TravelsListViewActivity::class.java)
+            startActivity(intent)
+        }
 
         val recettesList = listOf(
             RecetteModel("Patte carbonara", "délicieuse patte a la carbo"),
