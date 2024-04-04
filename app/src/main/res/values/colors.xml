@@ -6,4 +6,9 @@
     <color name="formBackground">#fcf3cf</color>
     <color name ="strokeColor">#fcf3cf</color>
     <color name ="purple">#d7bde2</color>
+    <color name ="button">#1A403B</color>
+    <color name ="fond">#E7E7E7</color>
+    <color name ="toolbar">#2B7369 </color>
+    <color name ="text">#4E5958</color>
+    <color name ="fond2">#8DA6A3</color>
 </resources>

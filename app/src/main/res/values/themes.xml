@@ -2,7 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FamilyCalandar" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/toolbar</item>
+        <item name="colorOnBackground">@color/fond</item>
+        <item name="backgroundColor">@color/fond</item>
+        <item name="android:windowBackground">@color/fond</item>
+
+        <item name="floatingActionButtonStyle">@style/MyFloatingActionButtonStyle</item>
+    </style>
+
+    <style name="MyFloatingActionButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/button</item>
     </style>
 
     <style name="Theme.FamilyCalandar" parent="Base.Theme.FamilyCalandar" />

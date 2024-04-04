@@ -51,8 +51,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="serif"
-                        android:text="Paramètres" />
+                        android:fontFamily="sans-serif"
+                        android:text="Paramètres"
+                        android:textColor="@color/button"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -84,8 +86,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="serif"
-                        android:text="Courses" />
+                        android:fontFamily="sans-serif"
+                        android:text="Liste des courses"
+                        android:textColor="@color/button"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -117,8 +121,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="serif"
-                        android:text="Menus" />
+                        android:fontFamily="sans-serif"
+                        android:text="Menus"
+                        android:textColor="@color/button"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -150,8 +156,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="serif"
-                        android:text="Agenda" />
+                        android:fontFamily="sans-serif"
+                        android:text="Agenda"
+                        android:textColor="@color/button"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -183,8 +191,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="serif"
-                        android:text="Tâches" />
+                        android:fontFamily="sans-serif"
+                        android:text="Tâches"
+                        android:textColor="@color/button"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 

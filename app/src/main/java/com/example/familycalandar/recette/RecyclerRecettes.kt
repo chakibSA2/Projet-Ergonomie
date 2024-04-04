@@ -24,10 +24,10 @@ class RecyclerRecettes : AppCompatActivity() {
         }
 
         val recettesList = listOf(
-            RecetteModel("Patte carbonara", "délicieuse patte a la carbo"),
-            RecetteModel("pomme de terre sauté ", "légere pomme de terre sauté"),
-            RecetteModel("chebakia", "le diabet a l'etat pure"),
-            RecetteModel("kebab", "salade tomate ognion"),
+            RecetteModel("Pâtes Carbonara", "Délicieuses pâtes à la carbonara"),
+            RecetteModel("Pommes de terre sautées ", "La recette simple et rapide"),
+            RecetteModel("Chebakia", "La diabète à l'état pur"),
+            RecetteModel("Kebab", "Comme au snack"),
 
             )
 

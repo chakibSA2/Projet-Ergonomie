@@ -8,7 +8,7 @@
     android:padding="24dp">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tb_tasksListToolbar"
+        android:id="@+id/tb_recettesListToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/transparent"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/back_button"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="TÂCHES"
+        app:title="Liste des recettes"
         app:titleTextColor="@android:color/black" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -41,7 +41,7 @@
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_add"
+        app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
