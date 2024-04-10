@@ -36,5 +36,11 @@ class SettingsActivity : AppCompatActivity() {
             val intent = Intent(this, ChangePinActivity::class.java)
             startActivity(intent)
         }
+
+        val btnShare = findViewById<Button>(R.id.ShareItem)
+        btnShare.setOnClickListener {
+            val intent = Intent(this, ShareActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
