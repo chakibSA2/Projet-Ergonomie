@@ -24,7 +24,7 @@ class RecyclerRecettes : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val recettesList = listOf(
+        val recettesList = mutableListOf(
             RecetteModel("Pâtes Carbonara", "Délicieuses pâtes à la carbonara"),
             RecetteModel("Pommes de terre sautées ", "La recette simple et rapide"),
             RecetteModel("Chebakia", "La diabète à l'état pur"),

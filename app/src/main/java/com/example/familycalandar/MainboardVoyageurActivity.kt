@@ -8,6 +8,7 @@ import androidx.cardview.widget.CardView
 import com.example.familycalandar.agenda.AgendaActivity
 import com.example.familycalandar.courses.CourseActivity
 import com.example.familycalandar.document.DocumentsListViewActivity
+import com.example.familycalandar.document.LoginDocumentActivity
 import com.example.familycalandar.menu.MenuViewActivity
 import com.example.familycalandar.parametre.SettingsActivity
 import com.example.familycalandar.toDoList.ToDoListActivity
@@ -21,7 +22,7 @@ class MainboardVoyageurActivity: AppCompatActivity() {
 
          val documents : CardView = findViewById(R.id.vgn_DocumentsVignette)
          documents.setOnClickListener {
-             val intent = Intent(this, DocumentsListViewActivity::class.java)
+             val intent = Intent(this, LoginDocumentActivity::class.java)
              startActivity(intent)
          }
 

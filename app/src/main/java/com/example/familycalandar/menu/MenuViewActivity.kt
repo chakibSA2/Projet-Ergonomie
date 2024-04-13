@@ -9,9 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.MainboardParentsActivity
 import com.example.familycalandar.MainboardVoyageurActivity
 import com.example.familycalandar.R
+import com.example.familycalandar.document.DocumentModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MenuViewActivity : AppCompatActivity() {
+    private lateinit var menuList : MutableList<MenuModel>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_view)
@@ -25,7 +27,7 @@ class MenuViewActivity : AppCompatActivity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.menuRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        val menuList = listOf(MenuModel("Menu 1", "Vendredi 12h"), MenuModel("Menu 2", "Samedi 20h"))
+        menuList = mutableListOf(MenuModel("Menu 1", "Vendredi 12h"), MenuModel("Menu 2", "Samedi 20h"))
 
         recyclerView.adapter = MenuAdapter(menuList) { menu ->
             val intent = Intent(this, ViewMenuActivity::class.java)

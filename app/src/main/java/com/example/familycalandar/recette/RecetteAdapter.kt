@@ -4,11 +4,13 @@ package com.example.familycalandar.recette
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familycalandar.R
 
-class RecetteAdapter(private val recettesList: List<RecetteModel>, private val onItemClick: (RecetteModel) -> Unit) :
+class RecetteAdapter(private val recettesList: MutableList<RecetteModel>, private val onItemClick: (RecetteModel) -> Unit) :
     RecyclerView.Adapter<RecetteAdapter.RecetteViewHolder>() {
 
     class RecetteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -28,6 +30,20 @@ class RecetteAdapter(private val recettesList: List<RecetteModel>, private val o
         holder.recetteDescription.text = currentRecette.description
         holder.itemView.setOnClickListener {
             onItemClick(recettesList[position])
+        }
+        holder.itemView.findViewById<ImageView>(R.id.deleteDocument).setOnClickListener {
+            // Afficher AlertDialog pour confirmer la suppression
+            AlertDialog.Builder(holder.itemView.context)
+                .setTitle("Supprimer la recette")
+                .setMessage("Êtes-vous sûr de vouloir supprimer cette recette ?")
+                .setPositiveButton(android.R.string.yes) { dialog, which ->
+                    recettesList.removeAt(position)
+                    notifyItemRemoved(position)
+                    notifyItemRangeChanged(position, recettesList.size)
+                }
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show()
         }
     }
 
