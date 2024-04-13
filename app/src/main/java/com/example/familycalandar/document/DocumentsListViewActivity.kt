@@ -29,7 +29,7 @@ class DocumentsListViewActivity : AppCompatActivity() {
         DocumentList = mutableListOf(DocumentModel("Passeport") , DocumentModel("Carte Identité"))
 
         recyclerView.adapter = DocumentAdapter(DocumentList) {
-            val intent = Intent(this, CreateDocumentActivity::class.java)
+            val intent = Intent(this, ViewDocumentActivity::class.java)
             startActivity(intent)
         }
 
